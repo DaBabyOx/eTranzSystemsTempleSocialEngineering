@@ -4,655 +4,748 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Our-Compnay Associate</title>
+  <title>eTranz Systems</title>
   <meta name="author" content="Velile Vamba">
-  <meta content="" name="lorem100">
-  <meta content="" name="keywords">
+  <meta name="description"
+    content="eTranz Systems delivers certified electrical components and smart technology solutions for rail and transport infrastructure.">
+  <meta name="keywords" content="electrical components, rail infrastructure, smart technology, MCCB sourcing">
 
   <!-- Favicons -->
-  
-
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="theme-color" content="#1e439d">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
-<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary: #1e439d;
+      --primary-dark: #132c73;
+      --secondary: #f5f7fa;
+      --accent: #00aaff;
+      --text-dark: #1a1a1a;
+      --text-light: #ffffff;
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-	<style type="text/css">
-		.carousel-item {
-		  height: 60vh;
-		  min-height: 350px;
-		  background: no-repeat center center scroll;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.7;
+      background-color: var(--secondary);
+    }
 
-.main .wrap {
-  margin: 2rem;
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-  transform-style: preserve-3d;
-  transform: perspective(100rem);
+    a:hover {
+      color: var(--primary-dark);
+    }
 
-  cursor: pointer;
-}
+    .btn-primary {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      padding: 0.75rem 2rem;
+      font-weight: 500;
+      border-radius: 0.5rem;
+      color: var(--text-light);
+      transition: all 0.3s ease;
+    }
 
-.main .container {
-  --rX: 0;
-  --rY: 0;
-  --bX: 50%;
-  --bY: 80%;
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+    }
 
- 
-  border: 1px solid var(--background-color);
-  border-radius: 1.6rem;
-  padding: 4rem;
+    /* Header */
+    header {
+      background-color: var(--text-light);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem 0;
+    }
 
-  display: flex;
-  align-items: flex-end;
+    .logo img {
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
 
-  position: relative;
-  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+    .logo img:hover {
+      transform: scale(1.05);
+    }
 
-  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
-  background-position: var(--bX) var(--bY);
-  background-size: 40rem auto;
-  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
+    .nav-menu ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+    }
 
-  transition: transform .6s 1s;
-}
+    .nav-menu a {
+      font-weight: 500;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      position: relative;
+    }
 
-.main .container::before,
-.main .container::after {
-  content: "";
+    .nav-menu a:hover,
+    .nav-menu .active a {
+      color: var(--primary);
+    }
 
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #fff;
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--primary);
+      transition: width 0.3s ease;
+    }
 
-  position: absolute;
-  z-index: 2;
+    .nav-menu a:hover::after,
+    .nav-menu .active a::after {
+      width: 100%;
+    }
 
-  opacity: .6;
-  transition: .3s;
-}
+    /* Section Title */
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+    }
 
-.main .container::before {
-  top: 2rem;
-  right: 2rem;
+    .section-title h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: var(--primary);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
 
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
+    /* About Section */
+    .about img {
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
 
-.main .container::after {
-  bottom: 2rem;
-  left: 2rem;
+    .about img:hover {
+      transform: scale(1.02);
+    }
 
-  border-top-width: 0;
-  border-right-width: 0;
-}
+    .about h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
 
-.main .container--active {
-  transition: none;
-}
+    .about ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
 
-.main .container--2 {
-  filter: hue-rotate(80deg) saturate(140%);
-}
+    .about ul li i {
+      color: var(--primary);
+      margin-right: 1rem;
+      font-size: 1.25rem;
+    }
 
-.main .container--3 {
-  filter: hue-rotate(160deg) saturate(140%);
-}
+    /* Services Section */
+    .services .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      background: var(--text-light);
+    }
 
-.main .container p {
-  color: hsla(0, 0%, 100%, .6);
-  font-size: 0.8rem;
-  text-align: left;
-}
+    .services .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
 
-.main .wrap:hover .container::before,
-.main .wrap:hover .container::after {
-  width: calc(100% - 4rem);
-  height: calc(100% - 4rem);
-}
+    .services .card h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
 
-.main .abs-site-link {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  color: hsla(0, 0%, 0%);
-  font-size: 1.6rem;
-} 
+    /* Call to Action */
+    .call-to-action {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--text-light);
+      padding: 5rem 0;
+    }
 
-/*****************************************/
-.solutions {
-  /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
+    .call-to-action .card {
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
 
-  /* Set a specific height */
-  min-height: 500px;
+    .call-to-action .card:hover {
+      transform: translateY(-10px);
+    }
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    .call-to-action .card h6 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
 
-.solutions .wrapper{
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-}
+    /* Solutions Section */
+    .solutions .card {
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      height: 250px;
+      perspective: 1000px;
+    }
 
-.solutions h1{
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 48px;
-}
+    .solutions .card .front,
+    .solutions .card .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.6s ease;
+      backface-visibility: hidden;
+      color: var(--text-light);
+    }
 
-.solutions .panels{
-  list-style-type: none;
-  padding: 0;
-}
+    .solutions .card .front {
+      background: var(--primary);
+      transform: rotateY(0deg);
+    }
 
-.solutions .panels li{
+    .solutions .card .back {
+      background: var(--primary-dark);
+      transform: rotateY(180deg);
+    }
 
-  margin: 0;
-  display: block;
-  box-sizing: border-box;
-  float: left;
-}
+    .solutions .card:hover .front {
+      transform: rotateY(-180deg);
+    }
 
-.solutions .panels li div{
-  padding: 10% 0;
-  text-align: center;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  height: 50vh;
-}
+    .solutions .card:hover .back {
+      transform: rotateY(0deg);
+    }
 
-/*// ANIMATION STYLES //*/
+    .solutions .card h6 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
 
-.solutions .panels div.back {
-  transform: rotateY(90deg);
-}
+    /* Team Section */
+    .team img {
+      width: 100px;
+      margin: 1rem;
+      border-radius: 0.5rem;
+      transition: transform 0.3s ease;
+    }
 
-.solutions .panels div.front {
-  position: absolute;
-}
+    .team img:hover {
+      transform: scale(1.1);
+    }
 
-.solutions .panels li:hover div.front {
-  animation: twirl 0.2s ease-in forwards;
-}
-.solutions .panels li:hover div.back {
-  animation: twirl 0.2s 0.2s ease-out forwards reverse;
-}
+    /* Resources Section */
+    .resources .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      text-align: center;
+      background: var(--text-light);
+      transition: all 0.3s ease;
+      min-height: 300px; /* Tinggi minimum untuk seragam */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Distribusi konten merata */
+    }
 
-@keyframes twirl {
-  0%{ transform: rotateY(0deg)}
-  100% {transform: rotateY(90deg)}
-}
+    .resources .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
 
-.why-us {
-  /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
+    .resources .card i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
 
-  /* Set a specific height */
-  min-height: 350px;
+    .resources .card h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    .resources .card p {
+      font-size: 1rem;
+      color: var(--text-dark);
+      margin-bottom: 1.5rem;
+      flex-grow: 1; /* Membuat teks mengisi ruang yang tersedia */
+    }
 
-	</style>
+    .resources .card a {
+      font-weight: 500;
+      color: var(--primary);
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    .resources .card a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* Contact Section */
+    .contact .info i {
+      color: var(--primary);
+      font-size: 1.75rem;
+      margin-right: 1rem;
+    }
+
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+      border-radius: 0.5rem;
+      border: 1px solid #dee2e6;
+      padding: 0.75rem;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact .php-email-form input:focus,
+    .contact .php-email-form textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 0.2rem rgba(30, 67, 157, 0.25);
+    }
+
+    .contact .php-email-form button {
+      background: var(--primary);
+      border: none;
+      padding: 0.75rem 2rem;
+      color: var(--text-light);
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .contact .php-email-form button:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .back-to-top {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 0.75rem;
+      border-radius: 50%;
+      bottom: 2rem;
+      right: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-5px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .nav-menu ul {
+        gap: 1rem;
+      }
+
+      .nav-menu a {
+        font-size: 0.9rem;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+
+      .about img {
+        margin-bottom: 2rem;
+      }
+
+      .services .card,
+      .call-to-action .card,
+      .solutions .card,
+      .resources .card {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .section-title h2 {
+        font-size: 1.75rem;
+      }
+
+      .contact .info,
+      .contact .php-email-form {
+        text-align: center;
+      }
+
+      .contact .info i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .team img {
+        width: 80px;
+      }
+
+      .resources .card {
+        min-height: 250px; /* Tinggi lebih kecil untuk layar kecil */
+      }
+
+      .resources .card i {
+        font-size: 2rem;
+      }
+
+      .resources .card h5 {
+        font-size: 1.25rem;
+      }
+
+      .resources .card p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
   <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a href="/"><img src="assets/img/eTranz.png" alt="eTranz Systems" class="img-fluid"></a>
       </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
+      <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Our Work</a></li>
           <li><a href="#faq">Case Studies</a></li>
           <li><a href="#team">Solutions</a></li>
-		      <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
-            
-      </nav><!-- .nav-menu -->
-
+      </nav>
     </div>
-  </header><!-- End #header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section >
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(assets/img/footer-bg.png)">
-          <div class="carousel-caption">
-            <h2 class="display-4">Our-Compnay</h2>
-            <p class="lead">Delivering relevant, agile yet simple technological solutions for financial services providers</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
-          <div class="carousel-caption ">
-            <h2 class="display-4">Our-Compnay</h2>
-            <p class="lead">Delivering relevant technologies for our times</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/covid.jpg)">
-          <div class="carousel-caption covid-block">
-            <h2 class="display-4">We are in this together.</h2>
-            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">Our Organisation is committed on taking recommendations from the health authorities,
-               WHO (World Health Organisation) and our local authority. Our company is committed to follow
-              the guidelines which includes, refraining from non-essential travelling, self-isolation upon return
-              from any affected areas, social distancing, wearing of musk’s and use of hand sanitizer.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+  <section style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/office.jpg'); 
+         background-size: cover; background-position: center; 
+         height: 100vh; position: relative; 
+         display: flex; align-items: center; justify-content: center;">
+    <div style="padding: 3rem; border-radius: 1rem; max-width: 800px; text-align: center; color: #fff;">
+      <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">We Are In This Together</h2>
+      <p style="font-size: 1.25rem; line-height: 1.6;">
+        eTranz Systems provides reliable components and smart solutions for
+        infrastructure growth.
+      </p>
     </div>
-  </section><!-- #hero -->
-  
+  </section>
 
   <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about py-5">
       <div class="container">
-
         <div class="section-title">
           <h2>About Us</h2>
         </div>
-
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Fapas.png" class="img-fluid" alt="">
+            <img src="assets/img/Fapas.png" class="img-fluid" alt="eTranz Systems">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
-            <h3>What we do</h3>
-            <p class="">
-              Specialist in financial services software solutions to help financial services providers unlock
-business growth and digital transformation through innovation and technology.
-            </p>
-            <p>
-              Our-Compnay focuses on delivering relevant, agile yet simple technological solutions
-for financial services providers in the emerging markets. Our solutions give a better user
-interface to wealth managers, fund managers, insurance brokers /companies and other financial
-services providers with minimum costs.
-            </p>
-            <p>
-              As a simple rule, we do not aim to be the most dominant software provider in our space, but we
-aim to be the best in the niche that we serve.
-            </p>
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>Engineering Excellence</h3>
+            <p>eTranz Systems bridges quality hardware sourcing and dependable project execution in electrical
+              infrastructure. With expertise in industrial supply chains and compliance, we deliver cost-efficient,
+              regulation-compliant solutions.</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check-circle"></i>Certified MCCBs, panel accessories, and safety relays.</li>
+              <li><i class="fas fa-check-circle"></i>Comprehensive compliance documentation.</li>
+              <li><i class="fas fa-check-circle"></i>Specialized rail and transport sector solutions.</li>
+            </ul>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Us Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services" class="services py-5 bg-light">
       <div class="container">
-
         <div class="section-title">
           <h2>Our Work</h2>
-          <p>Our-Compnay focuses on bringing cloud-based solutions to financial services
-providers. Our aim is not only to drastically reduce service managers time, effort, and cost but to
-offer Our-Compnay Associates’ experience ensuring the speedy and successful implementation of
-cloud-based systems.</p>
         </div>
-
-        
-          
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section class="call-to-action">
-      <div class="container">
-        
-        <div class="text-center">
-          
-        <div class="section-title">
-          <h2 style="color: #fff;">Our approach</h2>
-        </div>
-
-          <p>Our company approach focuses on bringing a better user interface for our client’s business to
-meet the emerging business environments. We achieve this through our Three Phase Process</p>
-
-<div class="container-fluid">
-  <div class="col-md-12">
-      <div class="row main">
-          <div class="wrap wrap--3 col-md-3">
-            <h6 style="color: #fff; text-align: right;">01. System Alignment Phase </h6>
-              <div class="container container--3 ">
-                  <p>Serves to determine the scope, resourcing, and timeframes for a Project Implementation
-                    Phase</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3  col-md-3">
-              <h6 style="color: #fff; text-align: right;">02.   Implementation Phase</h6>
-              <div class="container container--3 ">
-		<p>Delivering the tasks necessary to allow the FA portfolio administration systems to run live.
-These tasks will be mutually agreed and detailed in the System Alignment Phase</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3 col-md-3">
-              <h6 style="color: #fff; text-align: right;">03. Monthly Ongoing Phase</h6>
-              <div class="container container--3 ">
-                <p>
-                  Includes time to be used for on–going development as well as pure support and
-            maintenance.</p>
-            
-              </div>
-            </div>
-          
-      </div>
-  </div>
-</div>
-        </div>
-      </div>
-    </section><!-- End Call To Action Section -->
-
-    
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-
-    <section id="faq" class="solutions">
-      <div class="wrapper">
-        <h1>Case Studies</h1>
-        <ul class="panels">
-          <div class="row">
-          <li class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                An investment manager inherited an asset management business from a leading Pan-African
-bank with a view of modernizing the operation and scaling. Our-Compnay was approached to offer
-a cloud-based administration system which allowed clients, administrators and portfolio
-managers to have a full view of their portfolio from a portal.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-              <h6>Solution</h6>
-            <p>
-              Capitalizing on many years of experience in the financial services sector, Our-Compnay
-Associates offered an innovative end-to-end Investment Solution that utilized cloud-based
-technology to provide a functionally rich and versatile platform that supports the Front, Middle
-and Back Office requirements. That is, from trade execution, transaction processing, portfolio
-management reporting, compliance, and performance measurement. In 2020, the business has
-scaled considerably with minimal disruptions to operations. More so, they avoided downtime
-when lockdowns were implemented in 2020 since administrators could work from anywhere.
-            </p>
-            </div>
-          </li>
-          <li class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                After succeeding in servicing its institutional client base, a business wanted to extend the
-current service to high-net-worth individuals. Our-Compnay was approached because the provider
-needed a technology partner to help them deliver a dynamic solution to meet the continuously
-evolving needs of their new market.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-              <h6>Solution</h6>
-              <p>
-                Our-Compnay designed a system that allowed the Relationship managers to focus on their clients
-rather than the administration processes. The solution allowed the manager to have a 360° view
-for clients’ and funds’ investments monitoring. Clients have 24/7 access to their portfolio
-investments through integrated web modules.
-              </p>
-            </div>
-          </li>
-          <li  class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                An insurance company which offers regional funeral cover approached our company.
-Our-Compnay was approached to offer a cloud-based system which is easily accessible to clients
-when they want to pay premiums, seek insurance advice, and claim benefits. The accessibility
-was supposed to stretch across all communication platforms. Operationally, the system the
-provider also wanted a system that captured information from via a cloud-based portal whilst it
-allows it to gain customer insights through data analysis.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-            <h6>Solution</h6>
-              <p>Our-Compnay actuarial analysts initially interpreted client’s business and through our innovative
-                associates, we came up with a cloud-based system easily accessible to insurance company
-                users. We offered a partnership with the insurance company through providing a dynamic
-                technological solution. Our solution included good user interface for both the administrators and
-                the company’s clients. This came without compromising the useful data tools that will help the
-                insurer.</p>
-          </div>
-          </li>
-         
-        </div>
-        
-         
-        </ul>
-      </div>
-    </section>
-<!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" style="text-align: center;">
-      <div class="section-title">
-        <h2>Technology and Security</h2>
-      </div>
-
-        <p>Our-Compnay uses cloud based Microservices. Hosted on-premises or cloud scalable solution.
-          Driving highest business value through latest best in class technologies pinned by simplified
-          user-friendly approach adhering to Industry standards.</p>
-          <p>The client can be rest assured that the data is safe and secure in a state-of-the-art Data Centre
-            and compliant with relevant legislation.</p>
-        <div class="col-md-8 offset-md-2">
-          <img src="assets/img/quarkus_logo_vertical_rgb_1280px_default.png" class="rounded" width="100"  height="100" alt="...">
-          <img src="assets/img/java-logo-1.png" class="rounded " width="100"  height="100" alt="...">
-          <img src="assets/img/1561951216183.png" class="rounded " width="100"  height="100" alt="...">
-          <img src="assets/img/thumbnail-139148.png" class="rounded " width="100"  height="100" alt="...">
-        </div>
-       
-      </div>
-    </section><!-- End Our Team Section -->
-
-    <section id="" class="why-us" style="color: #fff;">
-      <div class="container" style="text-align: center;">
-        <div class="section-title">
-          <h2 style=" color: #fff;">Why Us</h2>
-        </div>
-          <p>Our-Compnay commenced business in 2016 after three years of designing and working
-  on a solution for its first client in South Africa. Our-Compnay is made up of
-  professionals with a good blend of financial and software expertise. Founders have a combined
-  experience of 28 years providing solutions to the financial services sector in Africa.</p>
-  <div class="text-center"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here to request for Demo</button></div>
- 
-  <div class="collapse" id="collapseExample">
-    <div class="col-lg-5 col-md-12">
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-        <div class="form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-          <div class="validate"></div>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-          <div class="validate"></div>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please tell us why you need a demo" placeholder="Message"></textarea>
-          <div class="validate"></div>
-        </div>
-        <div class="text-center"><button class="btn btn-info" type="submit">Send Request</button></div>
-      </form>
-    </div>
-  </div>
-      </div>
-    </section>
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
         <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <h5>Supply & Delivery</h5>
+              <p>Certified MCCBs, panel accessories, and safety relays from verified manufacturers.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <h5>Technical Compliance</h5>
+              <p>Products include compliance documentation, installation guidance, and performance specs.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <h5>Rail & Transport</h5>
+              <p>Expertise in rail-grade equipment and lifecycle requirements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-lg-4 col-md-6">
+    <section class="call-to-action py-5">
+      <div class="container">
+        <div>
+          <h2 style="color: white; text-align: center; font-size: 2.5rem; font-weight: 600; margin-bottom: 2rem; text-align: center;">Our Approach</h2>
+        </div>
+        <div class="display:flex; row align-items-center justify-content:center; height: 100%;">
+          <div class="col-md-4 mb-4">
+            <div class="card" style="color: white;">
+              <h6>01. Discovery & Alignment</h6>
+              <p>Needs analysis for technical specifications, volume, timeline, and compliance.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" style="color: white;">
+              <h6>02. Sourcing & Proposal</h6>
+              <p>Sourcing from approved suppliers with transparent cost and logistics planning.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card" style="color: white;">
+              <h6>03. Delivery & Support</h6>
+              <p>Secure packaging, delivery tracking, and post-delivery support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="solutions py-5">
+      <div class="container">
+        <div class="section-title">
+          <h2>Case Studies</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="front">
+                <h6>Rail Infrastructure (2023)</h6>
+                <p>Certified MCCBs for metro line modernization.</p>
+              </div>
+              <div class="back">
+                <h6>Solution</h6>
+                <p>Delivered compliant breakers meeting IEC 60947-2 and UL 489 within 18 days.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="front">
+                <h6>Public Utilities (2022)</h6>
+                <p>3P MCCBs for energy upgrade.</p>
+              </div>
+              <div class="back">
+                <h6>Solution</h6>
+                <p>Supplied at 14% below benchmark pricing with Tier 1 quality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="front">
+                <h6>Transport Safety (2021)</h6>
+                <p>Protective devices for regional trains.</p>
+              </div>
+              <div class="back">
+                <h6>Solution</h6>
+                <p>Delivered thermal-magnetic MCCBs in 10 days, avoiding penalties.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team py-5 bg-light">
+      <div class="container text-center">
+        <div class="section-title">
+          <h2>Technology & Security</h2>
+        </div>
+        <p>Our products comply with IEC 60947-2, UL 489, RoHS, and REACH standards. We use smart inventory tools and
+          logistics APIs for real-time tracking.</p>
+        <div class="col-md-8 mx-auto">
+          <img src="assets/img/certifications/1756651.png" alt="Quarkus">
+          <img src="assets/img/certifications/iso9001-1.png" alt="Java">
+          <img src="assets/img/certifications/rohs-compliant-logo-png-8.png" alt="Tech Logo">
+          <img src="assets/img/certifications/UL_Certified_US_and_CA.png" alt="Tech Logo">
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="resources py-5">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resources</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <i class="fas fa-file-pdf"></i>
+              <h5>Warranty Statement</h5>
+              <p>Explore the full terms and coverage tailored to each project.</p>
+              <a href="assets/pdf/warrantyStatement.pdf" target="_blank">SEE MORE</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <i class="fas fa-file-alt"></i>
+              <h5>Our Products</h5>
+              <p>Detailed specs for our MCCBs and electrical components.</p>
+              <a href="products.html" target="_blank">SEE MORE</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <i class="fas fa-file-contract"></i>
+              <h5>Compliance Report</h5>
+              <p>Our adherence to IEC 60947-2, UL 489, and other standards.</p>
+              <a href="assets/resources/compliance-report.pdf" target="_blank">SEE MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact py-5">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="contact-about">
-              <h3>Our-Compnay</h3>
-              <p>Delivering relevant technologies for our times</p>
-              <div class="social-links">
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-              </div>
+              <h3>eTranz Systems</h3>
+              <p>Delivering relevant technologies for our times.</p>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mb-4">
             <div class="info">
-              <div>
-                <i class="icofont-google-map"></i>
-                <p>Velile Estate, 123 Vamba Rd, Johannesburg, Gauteng, 2000</p>
+              <div class="mb-4">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>4312 Saddle Ridge Blvd<br>Wimberley, TX 78676</p>
               </div>
-
               <div>
-                <i class="icofont-envelope"></i>
-                <p>clients@Our-Compnay.com </p>
+                <i class="fas fa-envelope"></i>
+                <p>rmartinez@etranzsystems.com</p>
               </div>
-
-
             </div>
           </div>
-
           <div class="col-lg-5 col-md-12">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validate"></div>
+              <div class="form-group mb-3">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
+              <div class="form-group mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="form-group mb-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Contact Us Section -->
-   
-    <!-- ======= Map Section ======= -->
-    <section class="map">
-<iframe src="https://maps.google.com/maps?q=Government%20Ave,%20Pretoria,%200002&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	</section><!-- End Map Section -->
+    </section>
+  </main>
 
-  </main><!-- End #main -->
+  <div class="display: flex; align-items: center; justify-content: center;">
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+  </div>
 
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Our-Compnay</span></strong>. All Rights Reserved
+        © 2025 <strong>eTranz Systems</strong>. All Rights Reserved.
       </div>
-      
     </div>
-  </footer><!-- End #footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </footer>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
